@@ -126,7 +126,6 @@ do wr
 ### NAT configuration for core Router
 
 ```bash
-
 # both core 1 2
 
 ip nat inside source list 1 interface se0/2/0 overload 
@@ -156,5 +155,46 @@ exit
 do wr
 ```
 
+### OSPF configuration for core Router
 
+```bash
+# for core 1 router
+
+router ospf 10
+
+router-id 3.3.3.3
+
+network 172.16.3.144 0.0.0.3 area 0
+network 172.16.3.152 0.0.0.3 area 0
+network 195.136.17.0 0.0.0.3 area 0
+network 195.136.17.4 0.0.0.3 area 0
+
+exit
+
+do wr
+
+=======================
+
+
+# for core 2 router
+
+
+router ospf 10
+
+router-id 4.4.4.4
+
+network 172.16.3.148 0.0.0.3 area 0
+network 172.16.3.156 0.0.0.3 area 0
+network 195.136.17.8 0.0.0.3 area 0
+network 195.136.17.12 0.0.0.3 area 0
+
+exit
+
+do wr
+```
+
+### OSPF configuration for Multilayer
+```bash
+
+```
 
