@@ -241,5 +241,34 @@ network 172.16.3.152 0.0.0.3 area 0
 network 172.16.3.156 0.0.0.3 area 0
 ```
 
+### OSPF configuration for ISP Router
+
+```bash
+router ospf 10
+
+router-id 5.5.5.5
+
+network 195.136.17.8 0.0.0.3 area 0
+network 195.136.17.0 0.0.0.3 area 0
+
+exit
+
+do wr
+
+=============================
+
+
+router ospf 10
+
+router-id 5.5.5.5
+
+network 195.136.17.4 0.0.0.3 area 0
+network 195.136.17.12 0.0.0.3 area 0
+
+exit
+
+do wr
+```
+
 
 
