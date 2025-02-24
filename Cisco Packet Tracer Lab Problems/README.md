@@ -22,7 +22,7 @@ HQ(config)#
 
 -> To assign IP address to interface fa0/0 and  turn the port status ON:
 ```bash
-HQ(config)#i nt fa0/0
+HQ(config)#int fa0/0
 HQ(config-if)# ip address 192.168.1.129 255.255.255.192
 HQ(config-if)# no shutdown
 HQ(config-if)# exit
