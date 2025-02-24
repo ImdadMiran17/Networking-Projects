@@ -1,1 +1,21 @@
+# Network Configurations
+-> Commands for configuring switch
+```bash
+en
+conf t
+
+hostname HR-SW
+line console 0
+pass cisco
+login
+exit
+
+enable password cisco
+no ip domain-lookup
+banner motd #Unautorized access#
+
+service password-encryption
+
+do wr
+```
 
