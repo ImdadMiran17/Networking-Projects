@@ -74,3 +74,13 @@ ip route 0.0.0.0 0.0.0.0 se0/2/1 70
 do wr 
 ```
 
+### Commands for setting security
+
+```bash
+int range fa0/3-24
+switchport port-security maximum 1
+switchport port-security mac-address sticky
+switchport port-security violation shutdown
+```
+
+
