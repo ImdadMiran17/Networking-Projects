@@ -1,5 +1,5 @@
 # Network Configurations
--> Commands for configuring switch
+#### Commands for configuring switch
 ```bash
 en
 conf t
