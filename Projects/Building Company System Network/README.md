@@ -270,5 +270,27 @@ exit
 do wr
 ```
 
+### Multilayer VLAN configuration
+
+```bash
+int range gig1/0/3-8
+switchport mode trunk 
+
+vlan 10
+name Sales
+vlan 20
+name HR
+vlan 30
+name Finane
+vlan 40
+name Admin
+vlan 50
+name ICT
+vlan 60
+name Server
+
+exit
 
 
+do wr
+```
